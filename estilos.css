@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(90deg, #152331 0%, #000000 100%);
+    min-height: 590px;
+}
+.contenedor{
+    position: relative;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.wave{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+}
+
+.contenedor-textos{
+    flex-basis: 50%;
+    padding-left: 30px;
+    overflow: hidden;
+    color: white;
+}
+
+.title{
+    font-size: 128px;
+    width: 440px;
+    height: 465px;
+}
+
+.contenedor-imagen{
+    flex-basis: 50%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.img{
+    width: 95%;
+    animation: ilustrationAnimate ease-in 2s infinite alternate;
+}
+
+.wrapper,
+.portfolio {
+    margin-top: 2%;
+    height: none;
+    color: white;
+    padding-left: 5px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    
+}
+
+.brand span{
+    color: aqua;
+    font-size: 28px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+    background-color: #152331;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+  
+}
+
+.menu li{
+    list-style: none;
+    margin-top: 5px;
+    
+}
+
+.menu{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.menu .active {
+    color: aqua;
+}
+
+.menu a:hover {
+    background-color: aqua;
+    color: #000000;
+    transition: ease-in .5s;
+    border: none;
+    border-radius: 12px;
+    margin: 10px 20px;
+}
+
+/*BIENVENIDOS*/
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 400px;
+}
+
+h1{
+    font-size: 5em;
+}
+
+.download-cv {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 100px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(0, 255, 255, 0.644);
+}
+
+.download-cv:hover {
+    background-color: #ffffff;
+
+}
+
+span{
+    color: rgba(0, 255, 255, 0.644);
+}
+
+.main img {
+    width: 750px;
+    border: 5px solid aqua;
+    height: 600px;
+    margin-top: 5px;
+    
+}
+.about {  
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    grid-column: 5/10;
+
+}
+
+.about img{
+    animation: none;
+    width: 120%;
+    grid-column: 1/5;
+}
+
+.about-info {
+    grid-column: 5/10;
+    padding: 2em;
+}
+
+.about-info h2{
+    font-size: 3em;
+    color: #152331;
+}
+.divider{
+    height: 5px;
+    width: 70px;
+    background-color:  aqua;
+    margin-top: 5px;
+    margin-bottom: 5em;
+}
+
+.about p {
+    margin-bottom: 1em;
+}
+
+.portfolio-headings {
+    padding: 5em;
+}
+
+.portfolio-headings h2 {
+    font-size: 2.5em;
+}
+
+.portfolio .conteiner {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 300px;
+    background-color: rgb(77, 154, 156);
+    height: 420px;
+    margin: 1em;
+    margin-top: 1em;
+}
+
+.card_img {
+    width: 100%;
+    height: 150px;
+    background-image: url(img/2-original.png);
+    background-size: cover;
+    align-items: center;
+}
+
+.card_title {
+    padding: 15%;
+    text-align: center;
+    
+}   
+
+.card-projects-links{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.card-projects-links a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+.card-projects-links i {
+    font-size: 1.5em;
+}
+
+.card .projects-details {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    margin: 2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card .projects-details a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    
+}
+
+/*Formulario de contacto*/
+
+.container-contact{
+    padding: 3em;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+
+.contact-headings {
+    font-size: 2em;
+    color: #fff;
+    margin: 2em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-top: 1em;
+    margin: 2em;
+    font-size: 20px;
+    
+}
+
+.form-control input{
+    padding: 10px 20px;
+    margin-bottom: 2em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    
+}
+
+.form-control textarea {
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #fff;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(0, 255, 255, 0.644);
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.contact-form h4 {
+    font-size: 20px;
+    padding: 1em;
+    background-color: #152331;
+    border: none;
+    border-radius: 3px;
+}
+
+/*FOOTER*/
+
+.footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(173, 173, 173);
+}
+
+.footer-content h2{
+    font-size: 2em;
+}
+
+.social-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+.social-network i{
+    font-size: 1.5em;
+}
+
+.social-network i:hover{
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #cef;
+    animation: lds-facebook 1.4s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+
+
+
+  
+
+  
+
+@keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+
+
+
+@keyframes ilustrationAnimate{
+    0%{
+        transform: scale(1);
+    }100%{
+        transform: scale(1.04);
+    }
+    
+}
+
+    
